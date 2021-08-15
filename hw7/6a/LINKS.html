@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a:hover {
+            color: red;
+        }
+
+        a[href^="https://www.sports.ru"] {
+            padding: 0 10px 0 10px;
+            border-right: 5px solid red;
+        }
+
+        a[href^="https://www.eurosport.ru"] {
+            padding-left: 10px;
+        }
+
+        a[href*=".by"] {
+            display: inline-block;
+            width: 65px;
+            border-right: solid red 5px;
+            padding: 0 10px 0 10px;
+        }
+
+        a[title$="Deutsch"]::after {
+            content: "";
+            border-right: solid red 5px;
+            padding: 0 0 0 10px;
+            margin: 0 10px 0 0;
+        }
+
+        td:nth-child(-n+4) {
+            border-right: solid red 5px;
+            padding: 0 10px 0 10px;
+        }
+
+        div.Browsers>a:nth-child(-n+4) {
+            border-right: solid red 5px;
+            padding: 0 10px 0 10px;
+        }
+
+        div.auto {
+            padding: 0 10px 0 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="football">
+        <a href="https://www.sports.ru/epl/" target="_blank">English Premier League</a>
+        <a href="https://www.sports.ru/seria-a/" target="_blank">Seria A</a>
+        <a href="https://www.sports.ru/la-liga/" target="_blank">La Liga</a>
+        <a href="https://www.sports.ru/bundesliga/" target="_blank">Bundesliga</a>
+        <a href="https://www.eurosport.ru/football/ligue-1/" target="_blank">Ligue 1</a>
+    </div>
+    <br>
+    <div>
+        <a href="https://englishpapa.by/" target="_blank">English 1</a>
+        <a href="https://2english.by/" target="_blank">English 2</a>
+        <a href="https://str.by/" target="_blank">English 3</a>
+        <a href="https://ulc.by/" target="_blank">English 4</a>
+        <a href="https://skyeng.ru/" target="_blank">English 5</a>
+    </div>
+    <br>
+    <div class="Browsers">
+        <a href="https://www.google.ru/chrome/" target="_blank">Google Chrome</a>
+        <a href="https://www.mozilla.org/ru/firefox/" target="_blank">Mozilla firefox</a>
+        <a href="https://browser.yandex.ru/" target="_blank">Yandex Browser</a>
+        <a href="https://www.microsoft.com/ru-ru/edge" target="_blank">Microsoft Edge</a>
+        <a href="https://www.opera.com/ru" target="_blank" id="border_none">Opera</a>
+    </div>
+    <br>
+    <table>
+        <tr>
+            <td><a href="https://ru.wikipedia.org/wiki/Sbarro" target="_blank">Sbarro</a></td>
+            <td><a href="https://pizzahut.ru/" target="_blank">Pizza Hut</a></td>
+            <td><a href="https://ru.wikipedia.org/wiki/Papa_John’s" target="_blank">Papa Johns</a></td>
+            <td><a href="https://ru.wikipedia.org/wiki/Domino’s_Pizza" target="_blank">Dominos Pizaa</a></td>
+            <td><a href="https://ru.wikipedia.org/wiki/Додо_Пицца" target="_blank">Dodo Pizza</a></td>
+        </tr>
+    </table>
+    <br>
+    <div class="auto">
+        <a href="https://www.bmw.de/" target="_blank" title="BMW Deutsch">BMW</a>
+        <a href="https://www.mercedes-benz.de/" target="_blank" title="Mercedes Deutsch">Mercedes</a>
+        <a href="https://www.audi.de/" target="_blank" title="Audi Deutsch">Audi</a>
+        <a href="https://www.volkswagen.de/" target="_blank" title="Volkswagen Deutsch">Volkswagen</a>
+        <a href="https://www.opel.de/" target="_blank" title="Opel">Opel</a>
+    </div>
+</body>
+
+</html>

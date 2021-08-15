@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div.rotate {
+            background: url(images/star0.png);
+            width: 75px;
+            height: 78px;
+            display: inline-block;
+        }
+
+        div.rotate:hover {
+            background: url(images/star1.png);
+        }
+
+        .rotate:hover,
+        .rotate:hover~.rotate,
+        .rotate:checked~rotate:hover {
+            background: url(images/star1.png);
+        }
+
+        .items {
+            position: absolute;
+            display: flex;
+            flex-direction: row-reverse;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="items">
+        <div class="rotate"></div>
+        <div class="rotate"></div>
+        <div class="rotate"></div>
+        <div class="rotate"></div>
+        <div class="rotate"></div>
+    </div>
+</body>
+
+</html>
