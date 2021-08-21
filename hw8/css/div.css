@@ -1,0 +1,60 @@
+body{
+    max-width: 1400px;
+}
+
+.menu {
+    width: 20%;
+    float: left;
+    background-color: black;
+}
+
+li, a {
+    color: white;
+}
+
+.header {
+    background-color: black;
+    color: white;
+    padding: 1px;
+}
+
+.content {
+    background-color: black;
+    color: white;
+    float: left;
+    width: 80%;
+}
+
+.footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    clear: both;
+    padding: 15px;
+}
+
+img {
+    max-width: 140px;
+    max-height: 200px;
+    padding-right: 15px;
+    float: left;
+}
+
+.fast {
+    margin-top: 10px;
+    clear: both;
+}
+
+.furios {
+    margin-top: 55px;
+}
+
+h1, h2 {
+    text-align: center;
+    color: white;
+}
+
+body {
+    background-color: black;
+    margin: 0;
+}
