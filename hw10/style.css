@@ -1,0 +1,31 @@
+#width_setter input {
+    width: 80%;
+    margin-bottom: 20px;
+}
+
+#cat, #site_magazine, #agreecomment, #articletext {
+    margin-bottom: 20px;
+}
+
+#articletext {
+    width: 90%;
+}
+
+#heading {
+    margin-bottom: 40px;
+}
+
+.public {
+    display: inline-block;
+}
+
+@media screen and (max-width: 1024px) {
+    #namearticle, #cat {
+        display: block;
+    }
+
+    .public {
+        display: block;
+    }
+        
+}
