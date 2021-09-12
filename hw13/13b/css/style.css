@@ -1,0 +1,61 @@
+:root {
+  --house-color: seagreen;
+  --roof-color: sienna;
+  --pipe-color: black;
+  --window-color: cornflowerblue;
+  --stairs-color: grey;
+  --sun-color: gold;
+  --stroke-color: red;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.container_2:hover svg {
+  display: none;
+}
+
+.container_2:hover::before {
+  display: flex;
+  content: url(/hw13/13b/svg/change_svg.svg);
+  justify-content: center;
+  transform: scale(1.11);
+}
+
+#svg_3:hover {
+  fill: var(--house-color);
+}
+
+#svg_6:hover {
+  fill: var(--roof-color);
+}
+
+#svg_7:hover {
+  fill: var(--pipe-color);
+}
+
+#svg_8:hover {
+  fill: var(--window-color);
+}
+
+#svg_9:hover,
+#svg_10:hover {
+  fill: var(--stairs-color);
+}
+
+#svg_11:hover {
+  fill: var(--sun-color);
+}
+
+#svg_3:hover,
+#svg_6:hover,
+#svg_7:hover,
+#svg_8:hover,
+#svg_9:hover,
+#svg_10:hover,
+#svg_11:hover {
+  stroke: var(--stroke-color);
+  stroke-width: 5px;
+}

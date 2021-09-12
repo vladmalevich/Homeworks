@@ -1,0 +1,94 @@
+:root {
+  --font-color: blanchedalmond;
+  --back-color: black;
+  --fix-color: darkslategrey;
+  --fix-back-color: rgb(65, 122, 122);
+  --hover-color: salmon;
+  --fix-hover-color: white;
+  --heigt-px: 200px;
+  --indent-px: 20px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 1000px;
+  color: var(--font-color);
+  background-color: var(--back-color);
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+  }
+
+.header,
+.word {
+  padding: 20px 0 20px 0;
+  font-size: 31px;
+}
+
+.pic {
+  float: left;
+  max-width: 140px;
+  max-height: var(--heigt-px);
+  margin: 7px 10px 0 0;
+}
+
+.films {
+  margin: 0 0 100px 100px;
+}
+
+.navigation {
+  padding: 20px 0 20px 20px;
+}
+
+.fast {
+  clear: both;
+}
+
+.header,
+.footer {
+  height: var(--heigt-px);
+}
+
+.item,
+.link {
+  text-decoration: none;
+  color: var(--font-color);
+}
+
+.item:hover {
+  color: var(--hover-color);
+}
+
+.film_name {
+  margin-top: 0;
+}
+
+.footer,
+.fix_block,
+.header,
+.word,
+.navigation {
+  text-align: center;
+}
+
+.fix_block {
+  position: fixed;
+  top: var(--indent-px);
+  right: var(--indent-px);
+  border: 1px solid var(--font-color);
+  background-color: var(--fix-color);
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.fix_block:hover {
+  background-color: var(--fix-back-color);
+}
+
+.link:hover {
+  color: var(--fix-hover-color);
+}

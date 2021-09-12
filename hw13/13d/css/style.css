@@ -1,0 +1,69 @@
+:root {
+  --text-color: green;
+  --anim-half-color: maroon;
+  --anim-color: blue;
+  --eyes-color: greenyellow;
+  --mem-color: mediumaquamarine;
+  --square-color: royalblue;
+  --box-border: darkslategray;
+  --eyes-px: 200px;
+}
+
+.container:hover {
+  animation-play-state: running;
+}
+
+.text {
+  background-color: var(--text-color);
+  padding: 10px;
+  text-align: center;
+  font-size: 20px;
+  animation: Animation1 5s infinite;
+}
+
+@keyframes Animation1 {
+  from {
+    background-color: var(--text-color);
+  }
+  50% {
+    background-color: var(--anim-half-color);
+  }
+  to {
+    background-color: var(--anim-color);
+  }
+}
+
+.eyes {
+  height: var(--eyes-px);
+  background-color: var(--eyes-color);
+  width: var(--eyes-px);
+  transition: width 1s;
+}
+
+.eyes:hover {
+  width: 600px;
+}
+
+.mem {
+  width: 1000px;
+  transition: height 2s;
+  height: 15px;
+  overflow: hidden;
+  background-color: var(--mem-color);
+}
+
+.mem:hover {
+  height: 450px;
+}
+
+.square {
+  width: 500px;
+  background-color: var(--square-color);
+  height: var(--eyes-px);
+  transition: width 2s;
+}
+
+.square:hover {
+  width: 800px;
+  box-shadow: inset 0 0 0 23px var(--box-border);
+}
