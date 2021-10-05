@@ -9,8 +9,11 @@
   --eyes-px: 200px;
 }
 
-.container:hover {
-  animation-play-state: running;
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .text {
@@ -25,8 +28,14 @@
   from {
     background-color: var(--text-color);
   }
+  25% {
+    background-color: var(--anim-color);
+  }
   50% {
     background-color: var(--anim-half-color);
+  }
+  75% {
+    background-color: var(--text-color);
   }
   to {
     background-color: var(--anim-color);
@@ -38,14 +47,15 @@
   background-color: var(--eyes-color);
   width: var(--eyes-px);
   transition: width 1s;
+  height: 250px;
 }
 
 .eyes:hover {
-  width: 600px;
+  width: 400px;
 }
 
 .mem {
-  width: 1000px;
+  width: 500px;
   transition: height 2s;
   height: 15px;
   overflow: hidden;
